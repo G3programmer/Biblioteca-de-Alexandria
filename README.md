@@ -72,7 +72,7 @@ git clone https://github.com/G3programmer/Biblioteca-de-Alexandria.git
 ```
 ## 2. Entrar na pasta do projeto
 ```bash
-cd "Biblioteca de Alexandria"
+cd "Biblioteca-de-Alexandria"
 ```
 
 ## 3. Executar o sistema
