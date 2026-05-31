@@ -68,11 +68,11 @@ sudo apt update && sudo apt install php-cli php-json -y
 Siga os comandos abaixo no seu terminal para clonar e rodar o sistema:
 ## 1. Clonar o repositório
 ```bash
-git clone [https://github.com/G3programmer/code-academy-3C.git](https://github.com/G3programmer/code-academy-3C.git)
+git clone https://github.com/G3programmer/Biblioteca-de-Alexandria.git
 ```
 ## 2. Entrar na pasta do projeto
 ```bash
-cd "code-academy-3C"
+cd "Biblioteca de Alexandria"
 ```
 
 ## 3. Executar o sistema
