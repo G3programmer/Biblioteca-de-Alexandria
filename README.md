@@ -38,6 +38,47 @@ O nome é uma homenagem à famosa biblioteca, trazendo uma estética clássica p
 * **JSON (JavaScript Object Notation):** Utilizado como nossa tecnologia de banco de dados leve (NoSQL baseado em arquivos). Ele garante a interoperabilidade dos dados brutos em texto estruturado.
 
 ---
+# ⚙️ Instalação do PHP
+
+Para rodar a aplicação, você só precisa do interpretador do PHP configurado globalmente.
+
+---
+
+## Instalação no Windows
+
+| Passo          | Ação                                                                                                            |
+| :------------- | :-------------------------------------------------------------------------------------------------------------- |
+| **1. Baixar**  | Acesse [windows.php.net](https://windows.php.net/download/) e baixe o arquivo zip **VS16 x64 Non Thread Safe**. |
+| **2. Extrair** | Crie a pasta `C:\php` e extraia todo o conteúdo do zip dentro dela.                                             |
+| **3. Path**    | Adicione o caminho `C:\php` nas **Variáveis de Ambiente** do Sistema (dentro da variável `Path`).               |
+
+### Validar instalação no Windows:
+```bash
+php -v
+```
+---
+## 🐧 Instalação no Linux (Ubuntu/Debian)
+Atualize os pacotes do **sistema** e instale o PHP CLI juntamente com o módulo JSON:
+
+```Bash
+sudo apt update && sudo apt install php-cli php-json -y
+```
+
+# 🚀 Como Executar o Projeto
+Siga os comandos abaixo no seu terminal para clonar e rodar o sistema:
+## 1. Clonar o repositório
+```bash
+git clone [https://github.com/G3programmer/code-academy-3C.git](https://github.com/G3programmer/code-academy-3C.git)
+```
+## 2. Entrar na pasta do projeto
+```bash
+cd "code-academy-3C"
+```
+
+## 3. Executar o sistema
+```bash
+php index.php
+```
 
 ## 📂 Estrutura Modular
 
@@ -56,60 +97,3 @@ A organização das pastas reflete a separação de responsabilidades do sistema
     ├── save.php      # Conversão do Array Associativo PHP -> JSON e escrita em arquivo
     ├── search.php    # Sistema de busca e filtros dentro do array
     └── stats.php     # Painel de métricas (Contagem de livros, categorias, etc.)
-
-    ⚙️ Como Instalar o PHP (Tutorial Passo a Passo)
-Para rodar este projeto, você precisará apenas do interpretador do PHP configurado globalmente no seu sistema operacional.
-
-🪟 No Windows (Prompt de Comando / CMD / PowerShell)
-Baixar o PHP:
-Acesse o site oficial: https://windows.php.net/download/
-Procure pela versão mais recente estável (ex: PHP 8.2 ou 8.3) e baixe a opção VS16 x64 Non Thread Safe (arquivo Zip).
-
-Extrair os Arquivos:
-Crie uma pasta chamada php diretamente no seu Disco Local C (Ficará no caminho C:\php).
-Extrair todo o conteúdo do arquivo .zip baixado dentro dessa pasta C:\php.
-
-Configurar as Variáveis de Ambiente:
-No menu iniciar do Windows, pesquise por "Editar as variáveis de ambiente do sistema" e abra-o.
-Clique no botão Variáveis de Ambiente... (na parte inferior da janela).
-Na seção Variáveis do Sistema, procure pela variável chamada Path e dê um clique duplo nela.
-Clique no botão Novo no canto direito e digite exatamente o caminho da sua pasta: C:\php.
-Clique em OK em todas as janelas para fechar e salvar as alterações.
-
-Validar a Instalação:
-Abra um novo Prompt de Comando (CMD) e digite:
-
-DOS
-php -v
-Se aparecer a versão do PHP na tela, a configuração foi feita com sucesso!
-
-🐧 No Linux (Ubuntu / Debian / WSL)
-Instalar o PHP no Linux é direto através do gerenciador de pacotes apt:
-
-Abra o seu terminal e atualize os índices de pacotes locais:
-
-Bash
-sudo apt update
-Instale o interpretador CLI do PHP e o módulo de manipulação de JSON rodando:
-
-Bash
-sudo apt install php-cli php-json -y
-Valide se a instalação ocorreu com sucesso checando a versão:
-
-Bash
-php -v
-🚀 Como Baixar e Executar o Projeto
-Com o PHP devidamente instalado em sua máquina, siga os passos abaixo:
-
-Abra o terminal na pasta onde deseja salvar o projeto e clone este repositório:
-
-Bash
-git clone [https://github.com/G3programmer/code-academy-3C.git](https://github.com/G3programmer/code-academy-3C.git)
-Entre na pasta correspondente ao projeto:
-
-Bash
-cd "Code Academy"
-Inicie a aplicação executando o arquivo principal:
-
-Bash
-php index.php
