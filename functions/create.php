@@ -1,16 +1,6 @@
 <?php  
 include "cleaner.php";
 $arquivo = "livros.json";
-
-//Verificação se existe
-if (file_exists($arquivo)) {
-    $conteudo = file_get_contents($arquivo);
-    $livros = json_decode($conteudo, true) ?? [];
-} else {
-    $livros = [];
-}
-
-
 function create(&$livros, $arquivo ="livros.json") {
 
     limparTela();
