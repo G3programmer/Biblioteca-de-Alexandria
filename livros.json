@@ -42,6 +42,36 @@
         "genero": "reawrew",
         "paginas": 100000,
         "editora": "ererew",
+        "restricao": true
+    },
+    {
+        "id": "6a1cd2beee3a2",
+        "titulo": "Senhor dos aneis",
+        "autor": "J.R.R tolkien",
+        "ano": 2000,
+        "genero": "Fantasia",
+        "paginas": 100000,
+        "editora": "Sla",
+        "restricao": false
+    },
+    {
+        "id": "6a1cd50b3cb53",
+        "titulo": "eae",
+        "autor": "hoje",
+        "ano": 2001,
+        "genero": "ska",
+        "paginas": 23,
+        "editora": "fesefe",
+        "restricao": true
+    },
+    {
+        "id": "6a1cd64e133c2",
+        "titulo": "dps de atualizar",
+        "autor": "o codigo",
+        "ano": 241,
+        "genero": "s\u0000efjewof",
+        "paginas": 222,
+        "editora": "eu",
         "restricao": false
     }
 ]

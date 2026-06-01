@@ -1,14 +1,17 @@
 <?php  
 include "cleaner.php";
 $arquivo = "livros.json";
+
+//Verificação se existe
 if (file_exists($arquivo)) {
     $conteudo = file_get_contents($arquivo);
     $livros = json_decode($conteudo, true) ?? [];
 } else {
     $livros = [];
 }
-function create(&$livros) {
-    global $arquivo;
+
+
+function create(&$livros, $arquivo ="livros.json") {
 
     limparTela();
     echo "\n                     --- Cadastro de Livro ---\n";
@@ -33,7 +36,7 @@ function create(&$livros) {
     }
     
     while (true) {
-        echo "Digite o autor: ";
+        echo "Digite o autor: \n";
         $autor = trim(fgets(STDIN));
         if ($autor !== "") {
             break;
@@ -112,7 +115,6 @@ function create(&$livros) {
         "restricao" => ($restricao === "1") ? true : false //boolean
     ];
 
-    $arquivo = "livros.json";
     
     // 1. Convertemos a array inteira de livros atualizada para o formato de texto JSON
     // O JSON_PRETTY_PRINT serve para deixar o arquivo quebrado por linhas e fácil de ler
